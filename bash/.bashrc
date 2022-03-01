@@ -120,8 +120,8 @@ neofetch
 
 ##-----------------------------------------------------
 ## synth-shell-prompt.sh
-if [ -f /home/gabor/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
-	source /home/gabor/.config/synth-shell/synth-shell-prompt.sh
+if [ -f ~/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source ~/.config/synth-shell/synth-shell-prompt.sh
 fi
 
 #cd ~/Downloads/DL
