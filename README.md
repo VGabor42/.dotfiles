@@ -33,7 +33,7 @@ Clone
 ```
 cd ~
 git clone https://github.com/VGabor42/.dotfiles.git ~/.dotfiles
-``
+```
 
 Add your private key:
 `ssh-add ~/.ssh/<ssh-private-key>`
