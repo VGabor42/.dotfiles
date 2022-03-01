@@ -1,10 +1,32 @@
 # Changing "ls" to "exa"
-alias l='exa -al --color=always --group-directories-first' # my preferred listing
-# alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l.='exa -a | egrep "^\."'
+if ! [ -x "$(command -v exa)" ]; then
+  # echo 'Error: exa is not installed.' >&2
+  alias l='ls -al --color=always --group-directories-first' # my preferred listing
+  # alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+  alias la='ls -a --color=always --group-directories-first'  # all files and dirs
+  alias ll='ls -l --color=always --group-directories-first'  # compact view
+  alias l.='ls -a | egrep "^\."'
+else
+  alias l='exa -al --color=always --group-directories-first' # my preferred listing
+  # alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+  alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+  alias ll='exa -l --color=always --group-directories-first'  # long format
+  alias lt='exa -aT --color=always --group-directories-first' # tree listing
+  alias l.='exa -a | egrep "^\."'
+fi
+
+# git
+#alias addup='git add -u'
+alias addall='git add .'
+#alias branch='git branch'
+#alias checkout='git checkout'
+#alias clone='git clone'
+alias commit='git commit -m'
+#alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias gits='git status'  # 'status' is protected name so using 'stat' instead
+#alias tag='git tag'
 
 # rsync másolások
 alias rs='rsync -rtDvzP /home/gabor/Downloads/2copy/ /home/gabor/Downloads/DL/out/'
