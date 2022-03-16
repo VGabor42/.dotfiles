@@ -29,7 +29,7 @@ set number
 set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
-"set cursorcolumn
+"" set cursorcolumn
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
@@ -69,13 +69,13 @@ set showmode
 set showmatch
 
 " Use highlighting when doing a search.
-"set hlsearch
+"" set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=1000
 
 " Use visual bell (no beeping)
-"set visualbell
+"" set visualbell
 
 " FOLDING/UNFOLDING SECTIONS
 " zo to open a single fold under the cursor.
@@ -86,14 +86,14 @@ set history=1000
 " AUTO COMPLETION (WILDMENU) --------------------------------------------- {{{
 
 " Enable auto completion menu after pressing TAB.
-"set wildmenu
+"" set wildmenu
 
 " Make wildmenu behave like similar to Bash completion.
-"set wildmode=list:longest
+"" set wildmode=list:longest
 
 " There are certain files that we would never want to edit with Vim.
 " Wildmenu will ignore files with these extensions.
-"set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+"" set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " }}}
 
